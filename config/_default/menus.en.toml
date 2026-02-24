@@ -1,0 +1,20 @@
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Articles"
+  pageRef = "/posts"
+  weight = 20
+
+[[main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+
+# 把主站的引流链接放在导航栏最后
+[[main]]
+  name = "🚀 Try RapidDNS"
+  url = "https://rapiddns.io"
+  weight = 40
