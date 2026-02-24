@@ -2,7 +2,7 @@
 date = '2026-02-24T20:59:12+08:00'
 draft = false
 title = 'Red Team Weapon: RapidDNS CLI + Nuclei/Httpx for Automated Vulnerability Mining Pipeline'
-tags: ["Recon", "Bug Bounty", "nuclei","httpx","rapiddns-cli"]
+tags = ["Recon", "Bug Bounty", "nuclei","httpx", "rapiddns-cli"]
 +++
 
 
