@@ -1,7 +1,7 @@
 +++
 date = '2026-08-17T21:19:00+08:00'
 draft = false
-title = 'Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)'
+title = 'Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)'
 tags = ["Bug Bounty", "AI", "Automation", "rapiddns-cli", "CodeQL"]
 +++
 
