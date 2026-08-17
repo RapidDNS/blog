@@ -24,7 +24,7 @@ That's the whole idea: find sites that ship `.map` files, reverse the webpack bu
 
 I scripted the pipeline above and ran it against a target's subdomains as a test. It turned up a postMessage-based arbitrary JavaScript code execution bug, and that earned me a bounty worth around $450.
 
-![TSRC bounty — $450 USD](/images/shot1_reward_en.png)
+![Target bounty — $450 USD](/images/shot1_reward_en.png)
 
 Theory covered, result covered. Now for the real process.
 
