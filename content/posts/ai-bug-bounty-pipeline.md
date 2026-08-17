@@ -1,7 +1,7 @@
 +++
 date = '2026-08-17T21:19:00+08:00'
 draft = false
-title = 'I Automated Bug Bounties with AI — A Real, Paid Walkthrough (Part 1)'
+title = 'How I Automated Bug Bounties with AI (and Got Paid) — Part 1'
 tags = ["Bug Bounty", "AI", "Automation", "rapiddns-cli", "CodeQL"]
 +++
 
