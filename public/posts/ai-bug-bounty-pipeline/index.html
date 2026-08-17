@@ -4,7 +4,7 @@
   dir="ltr"
   class="scroll-smooth"
   data-default-appearance="light"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8">
   
     <meta http-equiv="content-language" content="en">
@@ -15,16 +15,18 @@
 
   
   
-    <title> &middot; RapidDNS Blog</title>
-    <meta name="title" content=" &middot; RapidDNS Blog">
+    <title>Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1) &middot; RapidDNS Blog</title>
+    <meta name="title" content="Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1) &middot; RapidDNS Blog">
   
 
   
   
   
+    <meta name="keywords" content="Bug Bounty,AI,Automation,rapiddns-cli,CodeQL,">
   
   
-  <link rel="canonical" href="http://localhost:1313/rapiddns_cli_guide_en/">
+  
+  <link rel="canonical" href="https://blog.rapiddns.io/posts/ai-bug-bounty-pipeline/">
   
 
   
@@ -48,15 +50,23 @@
   
 
   
-  <meta property="og:url" content="http://localhost:1313/rapiddns_cli_guide_en/">
-  <meta property="og:site_name" content="RapidDNS Blog">
-  <meta property="og:title" content="RapidDNS Blog">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.rapiddns.io/posts/ai-bug-bounty-pipeline/">
+	<meta property="og:site_name" content="RapidDNS Blog">
+	<meta property="og:title" content="Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-08-17T21:19:00+08:00">
+		<meta property="article:modified_time" content="2026-08-17T21:19:00+08:00">
+		<meta property="article:tag" content="Bug Bounty">
+		<meta property="article:tag" content="AI">
+		<meta property="article:tag" content="Automation">
+		<meta property="article:tag" content="Rapiddns-Cli">
+		<meta property="article:tag" content="CodeQL">
 
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="RapidDNS Blog">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)">
 
   
   
@@ -101,8 +111,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.c54019dc7ccdfc63a28ff9e8941fdaa42b12ffb773bbe18f14e4ce062614784c356bb2fbdfe24d6682586d2fd2b84116ce839dac5c31a637b79210647364a1f4.css"
-    integrity="sha512-xUAZ3HzN/GOij/nolB/apCsS/7dzu&#43;GPFOTOBiYUeEw1a7L73&#43;JNZoJYbS/SuEEWzoOdrFwxpje3khBkc2Sh9A==">
+    href="/css/main.bundle.min.62e0f9165ded77ca88fa65839f2c0afb58b35109d1a6ff39479bec832770f9e2e61234d30eda4d57a48a7399b61af9d83af309a77bd311d954969f30763cb146.css"
+    integrity="sha512-YuD5Fl3td8qI&#43;mWDnywK&#43;1izUQnRpv85R5vsgydw&#43;eLmEjTTDtpNV6SKc5m2GvnYOvMJp3vTEdlUlp8wdjyxRg==">
 
   
   
@@ -205,32 +215,38 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "RapidDNS",
-    "name": "",
-    "headline": "",
+    "articleSection": "Posts",
+    "name": "Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)",
+    "headline": "Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)",
     
     "inLanguage": "en",
-    "url" : "http://localhost:1313/rapiddns_cli_guide_en/",
+    "url" : "https://blog.rapiddns.io/posts/ai-bug-bounty-pipeline/",
     "author" : {
       "@type": "Person",
       "name": "Sky"
     },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-08-17T21:19:00\u002b08:00",
+    "datePublished": "2026-08-17T21:19:00\u002b08:00",
     
+    "dateModified": "2026-08-17T21:19:00\u002b08:00",
     
-    
-    
-    
-    
-    
+    "keywords": ["Bug Bounty","AI","Automation","rapiddns-cli","CodeQL"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1100"
+    "wordCount": "599"
   }]
   </script>
 
 
 
   
+  
+    
+
+
+
+
   
 
   
@@ -559,7 +575,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        
+        Hands-on: Earning Bug Bounties with AI-Driven Automated Vulnerability Hunting (Part 1)
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -609,7 +625,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="0001-01-01T00:00:00&#43;00:00">1 January 0001</time><span class="px-2 text-primary-500">&middot;</span><span>1100 words</span>
+      <time datetime="2026-08-17T21:19:00&#43;08:00">17 August 2026</time><span class="px-2 text-primary-500">&middot;</span><span>599 words</span>
     
 
     
@@ -660,8 +676,8 @@
         width="96"
         height="96"
         alt="Sky"
-        src="/rapiddns_2857330484249057153_hu_1bc3cc30025362cc.jpg"
-        data-zoom-src="/rapiddns_2857330484249057153_hu_27c4a03cfbcb6a75.jpg">
+        src="/rapiddns_2857330484249057153_hu_bb10ffc8002982d9.jpg"
+        data-zoom-src="/rapiddns_2857330484249057153_hu_901a31fe2b2cac5.jpg">
     
   
   <div class="place-self-center">
@@ -726,294 +742,138 @@
       
       
       
+        <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-10">
+            <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain bf-scrollbar rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0x00-the-workflow">0x00 The workflow</a></li>
+    <li><a href="#0x01-what-i-actually-got">0x01 What I actually got</a></li>
+    <li><a href="#0x02-how-the-ai-bounty-hunting-works">0x02 How the AI bounty hunting works</a></li>
+    <li><a href="#0x03-rapiddns-pro">0x03 RapidDNS Pro</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#0x00-the-workflow">0x00 The workflow</a></li>
+    <li><a href="#0x01-what-i-actually-got">0x01 What I actually got</a></li>
+    <li><a href="#0x02-how-the-ai-bounty-hunting-works">0x02 How the AI bounty hunting works</a></li>
+    <li><a href="#0x03-rapiddns-pro">0x03 RapidDNS Pro</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+
+          </div>
+        </div>
+      
 
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h1 class="relative group">🚀 Red Team Weapon: RapidDNS CLI + Nuclei/Httpx for Automated Vulnerability Mining Pipeline
-    <div id="-red-team-weapon-rapiddns-cli--nucleihttpx-for-automated-vulnerability-mining-pipeline" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-red-team-weapon-rapiddns-cli--nucleihttpx-for-automated-vulnerability-mining-pipeline" aria-label="Anchor">#</a>
-    </span>
-    
-</h1>
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="RapidDNS CLI Banner"
-    src="assets/banner.png"
-    ></figure>
-<p>Every Red Teamer and Bug Bounty Hunter knows that <strong>Reconnaissance (Recon)</strong> is the most critical step. In this phase, not only do your tools need to be powerful, but your data source must be solid.</p>
-<p>Today, I want to share a tool combination that I&rsquo;ve been using heavily for bug bounty hunting: <strong>RapidDNS CLI</strong>. This is the official CLI tool designed to interact with the RapidDNS full-data API. Its design is perfect for Red Team scenarios: <strong>Pipeline support, built-in data cleaning, and automated export</strong>. It seamlessly integrates with <code>httpx</code> and <code>nuclei</code>, creating a complete workflow from asset collection to vulnerability scanning.</p>
-<p><strong>Note: This tool essentially calls the RapidDNS Advanced API, so you need a PRO or MAX account to get an API Key. The advantage is that as long as you are a member, there are no complex quota limits—just unlimited access to full data. Simple and powerful.</strong></p>
-<p>Let&rsquo;s dive straight into the setup and practical usage.</p>
-<hr>
+          <p>A while back I wrote about building a vuln-hunting pipeline with rapiddns-cli and a few other tools. The one thing missing from that post was a real, paid bounty case. So today I&rsquo;m sharing one that actually paid out.</p>
+<p>I tend to pick a single hunting method and then run it at scale for SRC bounties. Base-model AI keeps getting stronger, and Agent engineering has come a long way too — from prompt tweaking to the &ldquo;harness&rdquo; approach everyone&rsquo;s into now. I pulled one of this year&rsquo;s real cases and stripped it down to a workflow you can repeat with RapidDNS.</p>
 
-<h2 class="relative group">🛠️ Step 1: Environment &amp; Installation
-    <div id="-step-1-environment--installation" class="anchor"></div>
+<h2 class="relative group">0x00 The workflow
+    <div id="0x00-the-workflow" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-step-1-environment--installation" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x00-the-workflow" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>Here are the two fastest ways to get started:</p>
-
-<h3 class="relative group">Option 1: Direct Download (Recommended for Beginners)
-    <div id="option-1-direct-download-recommended-for-beginners" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#option-1-direct-download-recommended-for-beginners" aria-label="Anchor">#</a>
-    </span>
-    
-</h3>
-<p>No need to install Go. Just go to the <a href="https://github.com/rapiddns/rapiddns-cli/releases"  target="_blank" rel="noreferrer">Releases page</a> on GitHub and download the zip file for your OS (Windows/Mac/Linux). Unzip it and place the <code>rapiddns-cli</code> binary in a directory accessible from your command line.</p>
-
-<h3 class="relative group">Option 2: Go Install (Recommended for Pros)
-    <div id="option-2-go-install-recommended-for-pros" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#option-2-go-install-recommended-for-pros" aria-label="Anchor">#</a>
-    </span>
-    
-</h3>
-<p>If you have a Go environment, you can install the latest version with one command:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install github.com/rapiddns/rapiddns-cli@latest</span></span></code></pre></div></div>
-<p>After installation, type <code>rapiddns-cli</code> in your terminal to verify it&rsquo;s working.</p>
-<hr>
-
-<h2 class="relative group">🔑 Step 2: Core Configuration (Required)
-    <div id="-step-2-core-configuration-required" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-step-2-core-configuration-required" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>To get this engine running, you need to fuel it up—configure your <strong>API Key</strong>.</p>
-
-<h3 class="relative group">1. Get Your API Key
-    <div id="1-get-your-api-key" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-get-your-api-key" aria-label="Anchor">#</a>
-    </span>
-    
-</h3>
-<p>Log in to the <a href="https://rapiddns.io/user/profile"  target="_blank" rel="noreferrer">RapidDNS Website</a> and copy your API Key from your profile.</p>
-<ul>
-<li>Kudos to the team: <strong>The API has no complex daily quota calculations</strong>. As long as you are a member, you can query full data directly, which is incredibly friendly for large-scale scanning.</li>
-</ul>
-
-<h3 class="relative group">2. Set the Key
-    <div id="2-set-the-key" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-set-the-key" aria-label="Anchor">#</a>
-    </span>
-    
-</h3>
-<p>Once you have the Key, configure it with one command:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rapiddns-cli config set-key <span class="s2">&#34;YOUR_API_KEY&#34;</span></span></span></code></pre></div></div>
-<p>Verify the configuration:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rapiddns-cli config get-key</span></span></code></pre></div></div>
-<p>Configuration complete. You now have permission to query full data.</p>
-<hr>
-
-<h2 class="relative group">⚡ Trick 1: One-Liner for HTTP Probe
-    <div id="-trick-1-one-liner-for-http-probe" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-trick-1-one-liner-for-http-probe" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>In the past, we had to run a subdomain tool, save the results to a file, and then feed that file to httpx&hellip; too tedious. RapidDNS CLI is designed with many pipeline-friendly parameters.</p>
-<p><strong>Scenario</strong>: I want to collect all subdomains for <code>tesla.com</code> and immediately check which ones are live Web services.</p>
-<p><strong>Combo Command</strong>:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rapiddns-cli search target.com --column subdomain -o text <span class="p">|</span> httpx -silent -sc -title -cl</span></span></code></pre></div></div>
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="http probe"
-    src="httpprobe.png"
-    ></figure>
-<p><strong>Breakdown</strong>:</p>
-<ul>
-<li><code>--column subdomain</code>: Outputs only the subdomain column, no need for <code>awk</code>.</li>
-<li><code>-o text</code>: Plain text output, one per line.</li>
-<li><code>--silent</code>: Silent mode, suppresses the &ldquo;Fetching&hellip;&rdquo; progress bar, outputting only clean data for the pipe.</li>
-<li><code>| httpx ...</code>: Feeds directly into httpx, showing you web fingerprints and status codes instantly.</li>
-</ul>
-<p>From collection to probing in seconds.</p>
-<hr>
-
-<h2 class="relative group">🎯 Trick 2: Automated Subdomain Takeover
-    <div id="-trick-2-automated-subdomain-takeover" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-trick-2-automated-subdomain-takeover" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Subdomain takeover is a favorite for many bounty hunters. We can feed the subdomains collected by RapidDNS directly into Nuclei.</p>
-<p><strong>Combo Command</strong>:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rapiddns-cli search google.com --column subdomain -o text<span class="p">|</span> nuclei -t http/takeovers -o takeover_results.txt</span></span></code></pre></div></div>
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="nuclei takeover"
-    src="nuclei_takeover.png"
-    ></figure>
-<p>How much faster is this than manually checking a website and copy-pasting? With cron jobs, you can even run this daily on new assets.</p>
-<hr>
-
-<h2 class="relative group">🔍 Trick 3: Precision Strikes with Advanced Syntax
-    <div id="-trick-3-precision-strikes-with-advanced-syntax" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-trick-3-precision-strikes-with-advanced-syntax" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Everyone can do basic subdomain searches, but the real power of RapidDNS CLI lies in its support for <strong>Advanced Query</strong>.</p>
-<p>Often, we don&rsquo;t want to see all records; we just want to find the &ldquo;low-hanging fruit.&rdquo; For example: <strong>I only want subdomains with CNAME records</strong> (since CNAMEs are most prone to takeovers).</p>
-<p><strong>Use the <code>--type advanced</code> parameter:</strong></p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Find all CNAME records under apple.com</span>
-</span></span><span class="line"><span class="cl">rapiddns-cli search <span class="s2">&#34;domain:apple AND tld:com AND type:CNAME&#34;</span> --type advanced</span></span></code></pre></div></div>
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="advanced.png"
-    src="advanced.png"
-    ></figure>
-<p><strong>Or find all A records within a specific IP range:</strong></p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Pinpoint assets in a specific C-class subnet</span>
-</span></span><span class="line"><span class="cl">rapiddns-cli search <span class="s2">&#34;value:8.8.8.8/24 AND type:A&#34;</span> --type advanced</span></span></code></pre></div></div>
-<figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="ipsearcch"
-    src="ipsearch.png"
-    ></figure>
-<p>This granular querying helps you filter out massive amounts of noise and zero in on the assets most likely to have issues. It works even better with the export function.</p>
-<hr>
-
-<h2 class="relative group">📊 Trick 4: Automated Data Cleaning &amp; IP Stats
-    <div id="-trick-4-automated-data-cleaning--ip-stats" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-trick-4-automated-data-cleaning--ip-stats" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>When you get tens of thousands of subdomains, what&rsquo;s the biggest headache?</p>
+<p>Here&rsquo;s the method, step by step:</p>
 <ol>
-<li><strong>Deduplication</strong> (too many duplicates).</li>
-<li><strong>IP Subnet Analysis</strong> (seeing which C-class subnets host the most assets for internal penetration or further scanning).</li>
+<li>Collect info with rapiddns-cli (<a href="https://github.com/RapidDNS/rapiddns-cli"  target="_blank" rel="noreferrer">https://github.com/RapidDNS/rapiddns-cli</a>).</li>
+<li>Pull HTTP and related data with httpx.</li>
+<li>Batch-scan sites and recover their sourcemap files with SourceMapX (<a href="https://github.com/insightglacier/SourceMapX"  target="_blank" rel="noreferrer">https://github.com/insightglacier/SourceMapX</a>).</li>
+<li>Point the AI at the recovered JavaScript to hunt for bugs.</li>
 </ol>
-<p>RapidDNS CLI has built-in data cleaning, saving you from writing scripts.</p>
-<p><strong>Command</strong>:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rapiddns-cli search target.com --extract-subdomains --extract-ips</span></span></code></pre></div></div>
+<p>That&rsquo;s the whole idea: find sites that ship <code>.map</code> files, reverse the webpack bundle back into source, then audit that source for vulnerabilities.</p>
+
+<h2 class="relative group">0x01 What I actually got
+    <div id="0x01-what-i-actually-got" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x01-what-i-actually-got" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>I scripted the pipeline above and ran it against a TSRC target&rsquo;s subdomains as a test. It turned up a postMessage-based arbitrary JavaScript code execution bug, and that earned me a bounty worth around $450.</p>
 <figure><img
     class="my-0 rounded-md"
     loading="lazy"
     decoding="async"
     fetchpriority="low"
-    alt="extract"
-    src="extract.png"
+    alt="TSRC bounty — $450 USD"
+    src="/images/shot1_reward_en.png"
     ></figure>
-<p>Run this, and three files will be automatically generated in your <code>result/</code> directory:</p>
-<ul>
-<li><code>target.com_subdomains.txt</code>: <strong>Clean, deduplicated</strong> list of subdomains.</li>
-<li><code>target.com_ips.txt</code>: <strong>Clean, deduplicated</strong> list of IPs.</li>
-<li><code>target.com_ip_stats.txt</code>: <strong>IP Subnet Statistics Report</strong>! 👇</li>
-</ul>
-<p><strong>The IP Stats Report looks like this (Super Useful):</strong></p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1.2.3.0/24: 52 IPs
-</span></span><span class="line"><span class="cl">5.6.7.0/24: 12 IPs
-</span></span><span class="line"><span class="cl">...</span></span></code></pre></div></div>
-<p>You can instantly spot which C-subnet is the main target zone and scan ports there with a high hit rate.</p>
-<hr>
+<p>Theory covered, result covered. Now for the real process.</p>
 
-<h2 class="relative group">📦 Ultimate Move: Mass Data Automated Export
-    <div id="-ultimate-move-mass-data-automated-export" class="anchor"></div>
+<h2 class="relative group">0x02 How the AI bounty hunting works
+    <div id="0x02-how-the-ai-bounty-hunting-works" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-ultimate-move-mass-data-automated-export" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x02-how-the-ai-bounty-hunting-works" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>If you are dealing with a massive target like <code>google.com</code>, or you need to pull hundreds of thousands of records at once, the standard <code>search</code> command might fail due to slow pagination or network fluctuations.</p>
-<p>This is where <strong>Export Mode</strong> comes in. Designed for API users, this runs tasks entirely in the cloud and downloads them automatically when finished.</p>
-<p><strong>And yes, Export Mode also supports Advanced Syntax!</strong></p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Start export task: Export all CNAME records for apple.com and automatically extract subdomains</span>
-</span></span><span class="line"><span class="cl">rapiddns-cli <span class="nb">export</span> start <span class="s2">&#34;domain:apple AND type:CNAME&#34;</span> --type advanced --extract-subdomains</span></span></code></pre></div></div>
-<figure><img
+<p>rapiddns-cli runs in export mode to dump every subdomain:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">rapiddns-cli export start &lt;domain&gt;</span></span></code></pre></div></div>
+<p>When it finishes you get something like <code>result/xxxxxx.csv</code>. I pull out the domains that resolve to external IPs and probe those next.</p>
+<p>For httpx:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">httpx -l &lt;subdomains.txt&gt; -mc 200,301,302 -silent -o &lt;domain&gt;_http.txt</span></span></code></pre></div></div>
+<p>For sourcemap recovery, I use the SourceMapX tool I built (<a href="https://github.com/insightglacier/SourceMapX"  target="_blank" rel="noreferrer">https://github.com/insightglacier/SourceMapX</a>):</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">python SourceMapX.py -m R -d urls.txt</span></span></code></pre></div></div>
+<p>After that, the custom AI-based JS vuln-hunting agent takes over.</p>
+<p>I built this agent from the ground up. It leans on CodeQL and checks for XSS, prototype pollution, postMessage issues, and similar classes. CodeQL&rsquo;s query output goes to the AI for analysis; once it spots something, it verifies the finding for real — it drives a browser and actually executes the payload to confirm. Final results get one last pass where the AI judges them against several criteria. That&rsquo;s the loop. Honestly, once the concept clicks, you can throw it together with vibe coding without much trouble.</p>
+<p>Why this works: CodeQL handles JavaScript well and doesn&rsquo;t need a build environment. Its rules also lift coverage and keep the AI from drifting or hallucinating. Beyond finding bugs, the AI writes new CodeQL rules on the fly based on the code it sees. We have hard rules and requirements to keep false positives low, and part of that verification is dynamic, which makes the results more credible. Doing it with AI plus scripts also burns far fewer tokens, so you can scan in bulk for almost nothing. It&rsquo;s practical, not theoretical. The case I just described cost under $15 to run, on the GPT-5.4 model. Here&rsquo;s a peek at how the findings get reported out.</p>
+<blockquote><p><strong>Finding:</strong> hardcoded token; postMessage source not validated, so attacker input reaches <code>eval</code> and executes JS.</p>
+</blockquote><figure><img
     class="my-0 rounded-md"
     loading="lazy"
     decoding="async"
     fetchpriority="low"
-    alt="alt text"
-    src="export.png"
+    alt="FuzzEvolve finding report"
+    src="/images/shot2_finding_en.png"
     ></figure>
-<p><strong>It automatically executes the following workflow</strong>:</p>
-<ol>
-<li>Submits the task to the cloud.</li>
-<li>Polls the status automatically (go grab a coffee).</li>
-<li><strong>Automatically downloads the ZIP file</strong> upon completion.</li>
-<li><strong>Automatically unzips it</strong>.</li>
-<li><strong>Automatically parses the CSV</strong> and generates your clean txt files.</li>
-</ol>
-<p>For large companies with millions of assets, this feature is a lifesaver—no timeouts, no local memory crashes.</p>
-<hr>
+<p>I&rsquo;m skipping most of the implementation details and the gotchas — there are a lot, and I&rsquo;d rather not sprawl. Maybe a dedicated post later. If you&rsquo;re interested, or you&rsquo;d want an open-source release to try, drop a comment. If enough people ask, I&rsquo;ll clean it up and open it. Questions welcome too.</p>
 
-<h2 class="relative group">💡 Summary
-    <div id="-summary" class="anchor"></div>
+<h2 class="relative group">0x03 RapidDNS Pro
+    <div id="0x03-rapiddns-pro" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-summary" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#0x03-rapiddns-pro" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>RapidDNS CLI is not just a query tool; it&rsquo;s an <strong>Asset Data &ldquo;Connector&rdquo;</strong>.</p>
-<ul>
-<li><strong>For Beginners</strong>: Download from GitHub, set your Key, and you&rsquo;re good to go. Simple.</li>
-<li><strong>For Pros</strong>: Use Advanced Search for precision filtering, combined with Pipelines feeding into Nuclei—this is the correct posture for automated bug hunting.</li>
-</ul>
-<p>Try it out. Leave the tedious collection work to automation and save your energy for the real vulnerability mining!</p>
-<hr>
-<p><em>Note: The penetration testing content in this article is for security research and educational purposes only. Do not use it for illegal purposes.</em></p>
-<hr>
-<p><strong>Recommended X (Twitter) Tags:</strong></p>
-<p>#RapidDNS #BugBounty #RedTeam #Pentest #InfoSec #CyberSecurity #Recon #Automation #Nuclei #HackingTools #Golang</p>
+<p>One thing to note: using rapiddns-cli the way I showed needs a RapidDNS Pro (or higher) membership. For pricing and how to sign up, just open <a href="https://rapiddns.io/pricing"  target="_blank" rel="noreferrer">https://rapiddns.io/pricing</a>.</p>
 
           
           
@@ -1032,6 +892,34 @@
     
     <footer class="pt-8 max-w-prose print:hidden">
       
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/posts/rapiddns-cli/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;Red Team Weapon: RapidDNS CLI + Nuclei/Httpx for Automated Vulnerability Mining Pipeline
+              </span>
+            </a>
+            
+              <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+                <time datetime="2026-02-24T20:59:12&#43;08:00">24 February 2026</time>
+              </span>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+        </span>
+      </div>
+    </div>
   
 
 
@@ -1092,7 +980,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
-  data-url="http://localhost:1313/">
+  data-url="https://blog.rapiddns.io/">
   <div
     id="search-modal"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">

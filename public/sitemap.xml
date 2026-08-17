@@ -3,19 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-02-24T20:59:12+08:00</lastmod>
+    <loc>https://blog.rapiddns.io/posts/ai-bug-bounty-pipeline/</loc>
+    <lastmod>2026-08-17T21:19:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-02-24T20:59:12+08:00</lastmod>
+    <loc>https://blog.rapiddns.io/posts/</loc>
+    <lastmod>2026-08-17T21:19:00+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/rapiddns-cli/</loc>
+    <loc>https://blog.rapiddns.io/</loc>
+    <lastmod>2026-08-17T21:19:00+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blog.rapiddns.io/posts/rapiddns-cli/</loc>
     <lastmod>2026-02-24T20:59:12+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
