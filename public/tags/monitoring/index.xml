@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Monitoring on RapidDNS Blog</title>
+    <link>https://blog.rapiddns.io/tags/monitoring/</link>
+    <description>Recent content in Monitoring on RapidDNS Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>RapidDNS.io</copyright>
+    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.rapiddns.io/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>RapidDNS Passes 11 Billion Records and Adds New Discovery Tools</title>
+      <link>https://blog.rapiddns.io/posts/rapiddns-update-11-billion-records/</link>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0800</pubDate>
+      
+      <guid>https://blog.rapiddns.io/posts/rapiddns-update-11-billion-records/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
